@@ -35,6 +35,6 @@ export default {
   }
 
   .colored-div {
-    color: $orange;
+    color: $divColor;
   }
 </style>
