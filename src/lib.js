@@ -6,7 +6,7 @@ const Lib = {
     if (install.installed) return;
     install.installed = true;
     Vue.prototype.$lib = new Vue({
-      primary: '#ccc'
+      primary: options.primary || '#ccc'
     });
     Object.keys(components).forEach((componentName) => {
       Vue.component(componentName, components[componentName]);

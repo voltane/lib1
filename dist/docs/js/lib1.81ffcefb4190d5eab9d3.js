@@ -61,7 +61,7 @@ const Lib = {
     if (install.installed) return;
     install.installed = true;
     Vue.prototype.$lib = new Vue({
-      primary: '#ccc'
+      primary: options.primary || '#ccc'
     });
     Object.keys(__WEBPACK_IMPORTED_MODULE_0__components_index__).forEach(componentName => {
       Vue.component(componentName, __WEBPACK_IMPORTED_MODULE_0__components_index__[componentName]);
@@ -91,6 +91,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     return {
       msg: 'Welcome to Your Vue.js App'
     };
+  },
+  computed: {
+    color() {
+      return this.$lib.primary;
+    }
   }
 });
 
@@ -112,10 +117,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "colored-div"
+    style: ({
+      color: this.color
+    })
   }, [_vm._v("\n  I'm div from lib! And i have a colour!\n  That's awesome tho!\n")])
 },staticRenderFns: []}
 
 /***/ })
 ],[9]);
-//# sourceMappingURL=lib1.63aea447ac14450ee1d9.js.map
+//# sourceMappingURL=lib1.81ffcefb4190d5eab9d3.js.map
