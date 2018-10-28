@@ -58,8 +58,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 const Lib = {
   install: (Vue, options) => {
-    if (install.installed) return;
-    install.installed = true;
+    if (Lib.install.installed) return;
+    Lib.install.installed = true;
     Vue.prototype.$lib = new Vue({
       primary: options.primary || '#ccc'
     });
@@ -125,4 +125,4 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 
 /***/ })
 ],[9]);
-//# sourceMappingURL=lib1.81ffcefb4190d5eab9d3.js.map
+//# sourceMappingURL=lib1.81b6403fd842e96c3b12.js.map

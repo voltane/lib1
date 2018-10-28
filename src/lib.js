@@ -3,8 +3,8 @@ import './styles/lib.scss';
 
 const Lib = {
   install: (Vue, options) => {
-    if (install.installed) return;
-    install.installed = true;
+    if (Lib.install.installed) return;
+    Lib.install.installed = true;
     Vue.prototype.$lib = new Vue({
       primary: options.primary || '#ccc'
     });
