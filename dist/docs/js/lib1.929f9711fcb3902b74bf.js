@@ -31,7 +31,9 @@ module.exports = Component.exports
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__hello_vue__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__hello_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__hello_vue__);
-/* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__hello_vue__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__hello_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony reexport (default from non-hamory) */ __webpack_require__.d(__webpack_exports__, "hello", function() { return __WEBPACK_IMPORTED_MODULE_0__hello_vue___default.a; });
+
+
 
 
 /***/ }),
@@ -125,4 +127,4 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 
 /***/ })
 ],[9]);
-//# sourceMappingURL=lib1.81b6403fd842e96c3b12.js.map
+//# sourceMappingURL=lib1.929f9711fcb3902b74bf.js.map

@@ -1,1 +1,5 @@
-export * from './hello.vue'
+import hello from './hello.vue'
+
+export {
+  hello
+}
